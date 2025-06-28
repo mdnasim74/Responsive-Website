@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar::before{
+    content: "";
+    background-image: url("back.jpg");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+#logo{
+    margin: 10px 30px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 60px;
+    background-size: cover;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Ballo Bhai', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/* Home Section */
+#home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 3px 200px;
+     height: 628px;
+     position: relative;
+}
+#home::before{
+    content: "";
+    background-image: url("back.jpg");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Ballo Bhai', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ballo Bhai', cursive;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px ;
+    font-family: 'Ballo Bhai', cursive;
+}
+.h-secondry{
+    font-family: 'Ballo Bhai', cursive;
+    font-size: 2.3rem;
+    padding: 12px;  
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: tomato;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* Services section */
+#services{
+    margin-left: 34px;
+    margin-right: 34px;
+    
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 28px;
+    margin: 25px 45px;
+    padding: 34px;
+    background-color: #f2f2f2;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Ballo Bhai', cursive;
+}
+/* Client section */
+
+#client-section{
+    position: relative;  
+}
+#client-section::before{
+    content: "";
+    background-image: url("back.jpg");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url("contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:34px ;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box input ,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
