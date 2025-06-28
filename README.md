@@ -1,1 +1,1 @@
-# this is a my first responsive website 
+# this is a my first responsive project
